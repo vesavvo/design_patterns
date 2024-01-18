@@ -6,7 +6,7 @@ import javafx.stage.Stage;
 import observer.tickboxes.model.Observable;
 import observer.tickboxes.model.UserSelection;
 
-public class ObservingStage extends Stage implements Observer{
+public class ObservingStage extends Stage implements Observer {
 
     private UserSelection observable;
 
@@ -16,16 +16,15 @@ public class ObservingStage extends Stage implements Observer{
         observable.addObserver(this);
     }
 
-        @Override
-        public void update() {
-            System.out.println("Stage received an update.");
+    @Override
+    public void update() {
+        System.out.println("Stage received an update.");
 
 
-
-            Node node = this.getScene().getRoot().lookup("#checkbox");
-            if (node instanceof CheckBox) {
-                ((CheckBox) node).setSelected(observable.isSelected());
-            }
-
+        Node node = this.getScene().getRoot().lookup("#checkbox");
+        if (node instanceof CheckBox) {
+            ((CheckBox) node).setSelected(observable.isSelected());
         }
+
+    }
 }
