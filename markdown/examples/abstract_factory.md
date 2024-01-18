@@ -6,9 +6,9 @@
 
 The example contains a JavaFX graphical user interface which displays a game pic of either a Pac-man style game or a Rabbit game.
 
-|      Pacman      |            Rabbit             |
-|:----------------:|:-----------------------------:|
-| ![Pacman](img/scr_pacman.png)| ![Rabbit](img/scr_rabbit.png) |
+|              Pacman              |              Rabbit              |
+|:--------------------------------:|:--------------------------------:|
+| ![Pacman](../img/scr_pacman.png) | ![Rabbit](../img/scr_rabbit.png) |
 
 
 
