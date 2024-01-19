@@ -6,34 +6,29 @@ import javafx.scene.Scene;
 import javafx.scene.control.CheckBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-
-import observer.tickboxes.model.*;
-
+import observer.tickboxes.model.UserData;
 
 public class Gui extends Application {
 
-    UserSelection userSelection = new UserSelection();
+    private UserData userData = new UserData();
 
     @Override
     public void start(Stage primaryStage) {
         // Open windows simultaneously
-        Platform.runLater(() -> openWindow("Window 1"));
-        Platform.runLater(() -> openWindow("Window 2"));
-        Platform.runLater(() -> openWindow("Window 3"));
+        openWindow("Window 1");
+        openWindow("Window 2");
+        openWindow("Window 3");
     }
 
     private void openWindow(String windowName) {
-        Stage stage = new ObservingStage(userSelection);
+        Stage stage = new Stage();
         stage.setTitle(windowName);
 
-        //userSelection.addObserver((Observer) stage);
-
-        CheckBox checkBox = new CheckBox("Toggle me");
-        checkBox.setId("checkbox");
+        CheckBox checkBox = new ObservingCheckBox("Toggle me", userData);
 
         checkBox.setOnAction(event -> {
             System.out.println(windowName + " - Checkbox state: " + checkBox.isSelected());
-            userSelection.setSelected(checkBox.isSelected());
+            userData.setSelected(checkBox.isSelected());
         });
 
         VBox root = new VBox(checkBox);

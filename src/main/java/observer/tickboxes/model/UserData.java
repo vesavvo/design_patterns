@@ -1,6 +1,6 @@
 package observer.tickboxes.model;
 
-public class UserSelection extends Observable {
+public class UserData extends Observable {
 
     private boolean isSelected;
 
