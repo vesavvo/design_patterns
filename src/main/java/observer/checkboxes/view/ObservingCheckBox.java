@@ -1,7 +1,7 @@
-package observer.tickboxes.view;
+package observer.checkboxes.view;
 
 import javafx.scene.control.CheckBox;
-import observer.tickboxes.model.UserData;
+import observer.checkboxes.model.UserData;
 
 public class ObservingCheckBox extends CheckBox implements Observer {
 

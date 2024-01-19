@@ -1,6 +1,6 @@
-package observer.tickboxes.model;
+package observer.checkboxes.model;
 
-import observer.tickboxes.view.*;
+import observer.checkboxes.view.*;
 
 import java.util.ArrayList;
 import java.util.List;

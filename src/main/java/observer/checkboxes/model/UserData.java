@@ -1,4 +1,4 @@
-package observer.tickboxes.model;
+package observer.checkboxes.model;
 
 public class UserData extends Observable {
 

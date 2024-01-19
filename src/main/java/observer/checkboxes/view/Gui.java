@@ -1,12 +1,11 @@
-package observer.tickboxes.view;
+package observer.checkboxes.view;
 
 import javafx.application.Application;
-import javafx.application.Platform;
 import javafx.scene.Scene;
 import javafx.scene.control.CheckBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-import observer.tickboxes.model.UserData;
+import observer.checkboxes.model.UserData;
 
 public class Gui extends Application {
 

@@ -7,7 +7,7 @@ Examples and Assigments for the Design Patterns course. (The lecture slides are 
 1. Factory Method. [Examples](markdown/examples/factory_method.md). [Assignments](markdown/assignments/factory_method.md).
 2. Abstract Factory. [Examples](markdown/examples/abstract_factory.md). [Assignments](markdown/assignments/abstract_factory.md).
 3. Composite. [Examples](markdown/examples/composite.md). [Assignments](markdown/assignments/composite.md).
-4. Observer
+4. Observer [Examples](markdown/examples/observer.md). [Assignments](markdown/assignments/observer.md).
 5. Singleton
 6. Decorator
 7. State

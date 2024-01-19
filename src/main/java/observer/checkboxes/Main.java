@@ -1,6 +1,6 @@
-package observer.tickboxes;
+package observer.checkboxes;
 
-import observer.tickboxes.view.Gui;
+import observer.checkboxes.view.Gui;
 
 public class Main {
 
