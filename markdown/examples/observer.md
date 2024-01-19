@@ -13,10 +13,6 @@ The [`UserData`](../../src/main/java/observer/checkboxes/model/UserData.java) is
 
 The `UserData` class, which is a subclass of `Observable`, has methods `setSelected()` and `isSelected()` that superficially look as regular setter and getter methods. However, the `setSelected()` method also calls the `notifyObservers()` method of the superclass. The `notifyObservers()` method calls the `update()` method of each observer in the list of observers.
 
-Note that
-- UserData is a subclass of the Observable abstract class.
-- ObservingCheckBox implements the Observer interface.
-
 The following class diagram shows the classes and their relationships:
 
 ```mermaid
