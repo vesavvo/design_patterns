@@ -41,8 +41,8 @@ classDiagram
     }
     Observable <|-- UserData
     Observer <.. ObservingCheckBox
-    UserData <-- ObservingCheckBox
-    Observer <-- Observable
+    UserData <--  ObservingCheckBox
+    Observer  <--  Observable
 ```
 
 
