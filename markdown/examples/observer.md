@@ -2,7 +2,7 @@
 
 > A behavioral pattern
 
-## Example: Updating checkboxes
+## Example: [Updating checkboxes](../../src/main/java/observer/checkboxes)
 
 The application opens three windows, each with a checkbox. Once the user click one of the checkboxes, the subject's (that is, the [`UserData`](
 ../../src/main/java/observer/checkboxes/model/UserData.java) object's) status is updated, and all checkboxes are informed about the change. As a consequence, all other checkboxes query the status of the subject and update themselves accordingly.

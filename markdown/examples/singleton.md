@@ -14,4 +14,13 @@ At subsequent calls to the `getInstance` method, the same timer instance is retu
 
 The methods in the `Timer` class are synchronized, so that only one thread can access them at a time. In this example, this is not strictly necessary, as the methods are only called from the same event dispatch thread.
 
+## See in the Internet
+
+- Refactoring Guru: https://refactoring.guru/design-patterns/singleton
+
+- SourceMaking: https://sourcemaking.com/design_patterns/singleton
+
+
+
+
 
