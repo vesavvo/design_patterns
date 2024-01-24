@@ -16,7 +16,7 @@ The methods in the `Timer` class are synchronized, so that only one thread can a
 
 ## Example: [Connection pool](../../src/main/java/singleton/connectionpool)
 
-In the example, the [`ConnectionPool`](../../src/main/java/singleton/connectionpool/ConnectionPool.java) class is used to create a pool of database connections.
+In the example, the [`ConnectionPool`](../../src/main/java/singleton/connectionpool/DatabaseConnectionPool.java) class is used to create a pool of database connections.
 
 Each database connection is represented by an instance of the [`Connection`](../../src/main/java/singleton/connectionpool/Connection.java) class. The `ConnectionPool` class is a singleton, which means that only one instance of it can exist at any given time.
 
