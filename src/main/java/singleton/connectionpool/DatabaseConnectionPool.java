@@ -3,14 +3,16 @@ package singleton.connectionpool;
 import java.util.ArrayList;
 import java.util.List;
 
-class DatabaseConnectionPool {
+public class DatabaseConnectionPool {
     private static DatabaseConnectionPool instance;
     private List<Connection> connectionPool;
+
+    private final int MAX_CONNECTIONS = 10;
 
     private DatabaseConnectionPool() {
         // Initialize the connection pool with up to 10 database connections
         connectionPool = new ArrayList<>();
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < MAX_CONNECTIONS; i++) {
             connectionPool.add(createDatabaseConnection());
         }
         System.out.println("Database connection pool created.");
