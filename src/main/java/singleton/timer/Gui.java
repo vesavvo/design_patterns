@@ -13,6 +13,9 @@ public class Gui extends Application {
     @Override
     public void start(javafx.stage.Stage primaryStage) throws Exception {
 
+        // Would fail because constructor is private:
+        // Timer t = new Timer();
+
         Timer.getInstance().reset();
 
         // open three windows

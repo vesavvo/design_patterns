@@ -1,10 +1,8 @@
 package singleton.timer;
 
 public class Timer {
-
     private static Timer instance;
     private long startTime;
-
     private Timer() {
         reset();
     }
@@ -19,7 +17,6 @@ public class Timer {
     public synchronized void reset() {
         startTime = System.currentTimeMillis();
     }
-
     public synchronized int getTime() {
         long currentTime = System.currentTimeMillis();
         long elapsedTime = currentTime - startTime;
