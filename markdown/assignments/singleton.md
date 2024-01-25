@@ -27,7 +27,7 @@ public class Main {
 }
 ```
 
-> Note that this application uses the logger in only one place. In a real application, the logger would be used in multiple places, which is why it is important to ensure that only one instance of the logger exists. Otherwise, multiple log files would be created, which would make it difficult to analyze the log messages, or, worse still, there might be many attempts to open the same file for writing, which would result in an exception.
+> Note that this application uses the logger in only one place. In a real application, the logger would be used in multiple places, which is why it is important to ensure that only one instance of the logger exists. Otherwise, many log files might be created, which would make it difficult to analyze the log messages, or, worse still, there might be many attempts to open the same file for writing, which would result in an exception.
 
 
 
