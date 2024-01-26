@@ -27,3 +27,9 @@ These three components make a product family:
 Note that in the classes that implement the [`Food`](../../src/main/java/abstract_factory/gamepic/view/Food.java) interface, the food can be drawn in very different ways:
 - [`PacmanFood`](../../src/main/java/abstract_factory/gamepic/view/PacmanFood.java) is drawn as a yellow circle, and the food items are always arranged as a grid.
 - [`RabbitFood`](../../src/main/java/abstract_factory/gamepic/view/RabbitFood.java) is drawn as a carrot, and the food items are displayed in random positions.
+
+## See in the Internet
+
+- Refactoring Guru: https://refactoring.guru/design-patterns/abstract-factory
+
+- SourceMaking: https://sourcemaking.com/design_patterns/abstract_factory
