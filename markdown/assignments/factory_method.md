@@ -79,11 +79,11 @@ classDiagram
     Map <|-- CityMap
     Map <|-- WildernessMap
     
-    Tile <|.. SwampTile
-    Tile <|.. WaterTile
-    Tile <|.. RoadTile
-    Tile <|.. ForestTile
-    Tile <|.. BuildingTile
+    Tile <|-- SwampTile
+    Tile <|-- WaterTile
+    Tile <|-- RoadTile
+    Tile <|-- ForestTile
+    Tile <|-- BuildingTile
     
     Game ..> Map
     Map ..> Tile

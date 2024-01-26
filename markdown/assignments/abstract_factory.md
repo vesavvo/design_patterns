@@ -6,12 +6,9 @@ The goal is to implement a simple ASCII art-based user interface element creatio
 
 **Requirements:**
 
-1. Create an abstract class `UIElement` representing a general user interface element. This class should include an attribute `text` and an abstract method `display`.
-2. Define concrete classes `Button`, `TextField`, and `Checkbox` that extend the `UIElement` class. Each class should implement the `display` method using ASCII art.
-3. Create an abstract factory class `UIFactory` that defines methods for creating different user interface elements. Each method should take a parameter `text`.
-4. Implement concrete factory classes `ButtonFactory`, `TextFieldFactory`, and `CheckboxFactory` that extend the `UIFactory` class and implement methods for creating user interface elements.
-5. Create an application class `UIApplication` with a `main` method.
-6. In the `UIApplication` class, use the `UIFactory` classes to create user interface elements and print them to the console.
+*Under construction. Please wait a few minutes.*
+
+
 
 **Guidelines:**
 

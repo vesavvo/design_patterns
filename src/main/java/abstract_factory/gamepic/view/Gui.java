@@ -14,7 +14,7 @@ public class Gui extends Application {
     public void start(Stage window) {
 
         GuiPartFactory factory = new RabbitPicGuiPartFactory();
-        //GuiPartFactory factory = new RabbitPicGuiPartFactory();
+        //GuiPartFactory factory = new PacmanPicGuiPartFactory();
 
         Canvas canvas = factory.createCanvas();
         GraphicsContext gc = factory.createGraphicsContext(canvas);
