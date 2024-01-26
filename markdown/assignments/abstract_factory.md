@@ -12,7 +12,7 @@ The goal is to implement a simple ASCII art-based user interface element creatio
 4. Define an abstract factory class `UIFactory` that defines methods for creating different user interface elements. Each method should take a parameter `text`.
 5. Implement concrete factory classes `AFactory`, and `BFactory` that extend the `UIFactory` class and implement methods for creating user interface elements. A factory class should create elements of one style only. Each creation method should take a `String` parameter `text` and return a user interface element of the appropriate type, showing the text in the element.
 5. Add a `main` method to your application that creates a `UIFactory` object and uses it to create user interface elements of the chosen style.
-6. Finally, add the ability to dynamically change the content of user interface elements by implementing a `setText` method. At this point, reconsider your class hierarchy: as the method is common to all user interface elements, where should it be defined? How should it be implemented?
+6. Finally, add the ability to dynamically change the content of user interface elements by implementing a `setText` method. The change should be visisble when the `display()` method is next called. At this point, reconsider your class hierarchy: as the method is common to all user interface elements, where should it be defined? How should it be implemented?
 
 **Guidelines:**
 
