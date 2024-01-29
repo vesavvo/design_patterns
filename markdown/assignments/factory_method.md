@@ -24,7 +24,7 @@ A `Map` should have the following methods:
 
 The `Tile` abstract class should have the following methods:
 - `getCharacter()` that returns the character that represents the tile type
-- `getType` that returns the tile type as a string (e.g. "swamp", "water", "road", "forest", "building")
+- `getType()` that returns the tile type as a string (e.g. "swamp", "water", "road", "forest", "building")
 
 In addition, you should have a `Game` class that has a `main()` method. The `main()` method should create a desired `Map` object and display it on the screen. The `Game` class contains the factory method `createMap()` that creates either a `CityMap` or a `WildernessMap` object.
 
