@@ -28,7 +28,7 @@ graph TD
 
 In this example, a `State` object initiates the transition to the next state.
 
-New states are constructed on the fly, and the machine's state is changed to the new state when a state calls the machine's `setState` method.
+New states are constructed on the fly, and the machine's state is changed to the new state when a state calls the machine's `setState()` method.
 
 An alternative approach to the dynamic generation of state objects would be to create all the states in advance and store them in the machine. In this case, the machine's state would be changed by assigning a new state to the machine.
 
