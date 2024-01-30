@@ -14,8 +14,7 @@ public class TicketSelectionState extends State {
     public void action() {
 
         String[] options = {"AB ticket", "ABC ticket", "BC ticket", "Pay", "Exit"};
-        int choice = readUserChoice(options);
-        switch (choice) {
+        switch (this.getMachine().readUserChoice(options)) {
             case 1:
                 System.out.println("+1 AB ticket selected");
                 this.getMachine().addBalance(AB_TICKET_PRICE);

@@ -9,8 +9,7 @@ public class ReadyState extends State {
 
     public void action() {
         String[] options = {"Buy Tickets"};
-        int choice = readUserChoice(options);
-        switch (choice) {
+        switch (this.getMachine().readUserChoice(options)) {
             case 1:
                 this.getMachine().setState(new TicketSelectionState(this.getMachine()));
                 break;
