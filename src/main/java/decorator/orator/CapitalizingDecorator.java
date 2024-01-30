@@ -1,8 +1,8 @@
 package decorator.orator;
 
-public class CapitalsDecorator extends OratorDecorator {
+public class CapitalizingDecorator extends OratorDecorator {
 
-    public CapitalsDecorator(Orator orator) {
+    public CapitalizingDecorator(Orator orator) {
         super(orator);
     }
 

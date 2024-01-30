@@ -9,12 +9,18 @@ public class Main {
         orator = new BasicOrator();
         orator.say("Hello World!");
 
-        // let an orator with capitals speak
-        orator = new CapitalsDecorator(orator);
-        orator.say("Hello World!");
+        // uncomment to create decorated orators
 
-        // let an orator that speaks backwards, with capitals and with an introduction
-        orator = new BackwardsDecorator(new CapitalsDecorator(new IntroDecorator(orator)));
-        orator.say("Hello World!");
+        // let a capitalizing orator speak
+        //orator = new CapitalizingDecorator(orator);
+        //orator.say("Hello World!");
+
+        // let an introducing, capitalizing and reversing orator speak
+        //orator = new ReversingDecorator(new CapitalizingDecorator(new IntroducingDecorator(orator)));
+        //orator.say("Hello World!");
+
+        // let an introducing and concluding orator speak
+        //orator = new ConcludingDecorator(new IntroducingDecorator(orator));
+        //orator.say("Hello World!");
     }
 }

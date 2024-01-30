@@ -1,8 +1,8 @@
 package decorator.orator;
 
-public class BackwardsDecorator extends OratorDecorator {
+public class ReversingDecorator extends OratorDecorator {
 
-        public BackwardsDecorator(Orator orator) {
+        public ReversingDecorator(Orator orator) {
             super(orator);
         }
 

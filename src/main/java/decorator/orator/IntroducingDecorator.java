@@ -1,8 +1,8 @@
 package decorator.orator;
 
-public class IntroDecorator extends OratorDecorator {
+public class IntroducingDecorator extends OratorDecorator {
 
-    public IntroDecorator(Orator orator) {
+    public IntroducingDecorator(Orator orator) {
         super(orator);
     }
 
