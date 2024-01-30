@@ -6,11 +6,11 @@ public class PaymentState extends State {
         super(machine);
     }
 
-    public void userAction() {
+    public void action() {
         System.out.println("Outstanding balance: " + this.getMachine().getBalance());
         String[] options = {"Enter card", "Exit"};
-        int action = readUserChoice(options);
-        switch (action) {
+        int choice = readUserChoice(options);
+        switch (choice) {
             case 1:
                 this.getMachine().setState(new PrintingState(this.getMachine()));
                 break;

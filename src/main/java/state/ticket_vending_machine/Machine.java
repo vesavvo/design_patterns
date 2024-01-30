@@ -17,7 +17,7 @@ public class Machine {
                 System.out.println("Machine out of order");
                 return;
             }
-            state.userAction();
+            state.action();
         }
     }
 

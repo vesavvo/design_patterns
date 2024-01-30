@@ -6,12 +6,12 @@ public class PrintingState extends State {
         super(machine);
     }
 
-    public void userAction() {
+    public void action() {
         getMachine().issueTickets();
         getMachine().clearBalance();
         String[] options = {"Take the ticket" };
-        int action = readUserChoice(options);
-        switch (action) {
+        int choice = readUserChoice(options);
+        switch (choice) {
             case 1:
                 this.getMachine().setState(new ReadyState(this.getMachine()));
                 break;

@@ -4,7 +4,7 @@
 
 ## Example: [Ticket vending machine](../../src/main/java/state/ticket_vending_machine)
 
-The [`Machine`](../../src/main/java/state/ticket_vending_machine/Machine.java) class represents a ticket vending machine. It has a state, which is represented by the [`State`](../../src/main/java/state/ticket_vending_machine/State.java) abstract class. The class declares a `userAction()` method for the actions that are performed by the machine in the corresponding state.
+The [`Machine`](../../src/main/java/state/ticket_vending_machine/Machine.java) class represents a ticket vending machine. It has a state, which is represented by the [`State`](../../src/main/java/state/ticket_vending_machine/State.java) abstract class. The class declares an `action()` method for the actions that are performed by the machine in the corresponding state.
 
 The subclasses of the `State` class represent the states of the machine.
 - The [`ReadyState`](../../src/main/java/state/ticket_vending_machine/ReadyState.java) class represents the state when the machine is ready to sell tickets.

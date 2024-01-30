@@ -7,10 +7,10 @@ public class ReadyState extends State {
         this.getMachine().clearBalance();
     }
 
-    public void userAction() {
+    public void action() {
         String[] options = {"Buy Tickets"};
-        int action = readUserChoice(options);
-        switch (action) {
+        int choice = readUserChoice(options);
+        switch (choice) {
             case 1:
                 this.getMachine().setState(new TicketSelectionState(this.getMachine()));
                 break;

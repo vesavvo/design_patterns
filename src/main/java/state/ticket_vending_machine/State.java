@@ -28,5 +28,5 @@ public abstract class State {
         return input;
     }
 
-    abstract void userAction();
+    abstract void action();
 }
