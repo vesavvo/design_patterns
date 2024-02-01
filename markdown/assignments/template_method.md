@@ -30,7 +30,7 @@ Your goal is to implement a game of your choice by extending the `Game` class. T
 
 **Guidelines:**
 
-- Note that you are in no way limited to the two classes: the `Game` class and the subclass you have to implement. Your subclass is free to generate other objects as needed.
+- Note that you are in no way limited to the two classes: the `Game` class and the subclass you have to implement. Your can compose other classes that your subclass uses.
 - You can maintain the game's state in the instance variables of your subclass.
 - Try not to modify the `Game` class, as it is the framework that you should use as is.
 
