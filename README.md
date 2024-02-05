@@ -12,7 +12,7 @@ Examples and Assigments for the Design Patterns course. (The lecture slides are 
 6. Decorator. [Examples](markdown/examples/decorator.md). [Assignments](markdown/assignments/decorator.md).
 7. State. [Examples](markdown/examples/state.md). [Assignments](markdown/assignments/state.md).
 8. Template Method. [Examples](markdown/examples/template_method.md). [Assignments](markdown/assignments/template_method.md).
-9. Strategy
+9. Strategy. [Examples](markdown/examples/strategy.md). [Assignments](markdown/assignments/strategy.md).
 10. Chain of Responsibility
 11. Memento
 12. Proxy
