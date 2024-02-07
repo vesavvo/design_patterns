@@ -12,7 +12,7 @@ The application checks and approves an employee's travel expense report in accor
 
 The travel expenses are managed by the [`ExpenseReport`](../../src/main/java/chain_of_responsibility/travel_expenses/ExpenseReport.java) class, which has the `getAmount()` and `isPlanned()` methods.
 
-The abstract superclass [`Approver`](../../src/main/java/chain_of_responsibility/travel_expenses/Approver.java) deeclares the `process()` method, and is responsible for managing the next object in the chain.
+The abstract superclass [`Approver`](../../src/main/java/chain_of_responsibility/travel_expenses/Approver.java) declares the `process()` method, and is responsible for managing the next object in the chain.
 
 The concrete subclasses [`AutomaticApprover`](../../src/main/java/chain_of_responsibility/travel_expenses/AutomaticApprover.java),
 [`InspectingApprover`](
