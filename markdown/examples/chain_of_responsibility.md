@@ -2,15 +2,15 @@
 
 > An object behavioral pattern
 
-## Example: [Travel expenses approval](../../src/main/java/chain_of_responsibility/travel_expenses)
+## Example: [Travel expense report approval](../../src/main/java/chain_of_responsibility/travel_expenses)
 
-The application checks and approves travel expenses in accordance to the following company rules:
+The application checks and approves an employee's travel expense report in accordance to the following company rules:
 
 - The expenses are automatically approved if they are less than 100.
 - Otherwise, the expenses undergo detailed automatic checking, after which they are approved if they are less than 400 and the trip is pre-planned.
 - Otherwise, the expenses are sent for manual review.
 
-The travel expenses are managed by the [`TravelExpense`](../../src/main/java/chain_of_responsibility/travel_expenses/TravelExpense.java) class, which has the `getAmount()` and `isPlanned()` methods.
+The travel expenses are managed by the [`ExpenseReport`](../../src/main/java/chain_of_responsibility/travel_expenses/ExpenseReport.java) class, which has the `getAmount()` and `isPlanned()` methods.
 
 The abstract superclass [`Approver`](../../src/main/java/chain_of_responsibility/travel_expenses/Approver.java) deeclares the `process()` method, and is responsible for managing the next object in the chain.
 
