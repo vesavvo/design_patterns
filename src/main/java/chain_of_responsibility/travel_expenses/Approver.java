@@ -4,16 +4,16 @@ public class Approver {
 
     private Approver nextApprover;
 
-    void process(ExpenseReport expenseReport) {
+    public void process(ExpenseReport expenseReport) {
         if (nextApprover != null) {
             nextApprover.process(expenseReport);
         }
     }
-    void setNextApprover(Approver nextApprover) {
+    public void setNextApprover(Approver nextApprover) {
         this.nextApprover = nextApprover;
     }
 
-    Approver getNextApprover() {
+    public Approver getNextApprover() {
         return nextApprover;
     }
 }
