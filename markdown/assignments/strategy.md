@@ -1,4 +1,5 @@
-# Assignment: TBA
+# Assignment: Algorithm Performance Comparison
+
 **Goal:**
 
 Your goal is to implement at least three sorting algorithms using the Strategy pattern, and empirically compare their performance with two different data sets.
