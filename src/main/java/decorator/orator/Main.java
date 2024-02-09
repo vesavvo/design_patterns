@@ -12,15 +12,15 @@ public class Main {
         // uncomment to create decorated orators
 
         // let a capitalizing orator speak
-        //orator = new CapitalizingDecorator(orator);
-        //orator.say("Hello World!");
+        orator = new CapitalizingDecorator(new BasicOrator());
+        orator.say("Hello World!");
 
         // let an introducing, capitalizing and reversing orator speak
-        //orator = new ReversingDecorator(new CapitalizingDecorator(new IntroducingDecorator(orator)));
-        //orator.say("Hello World!");
+        orator = new ReversingDecorator(new CapitalizingDecorator(new IntroducingDecorator(new BasicOrator())));
+        orator.say("Hello World!");
 
         // let an introducing and concluding orator speak
-        //orator = new ConcludingDecorator(new IntroducingDecorator(orator));
-        //orator.say("Hello World!");
+        orator = new ConcludingDecorator(new IntroducingDecorator(new BasicOrator()));
+        orator.say("Hello World!");
     }
 }
