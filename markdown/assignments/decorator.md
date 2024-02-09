@@ -24,3 +24,7 @@ Printer printer2 = new EncryptedPrinter(new FilePrinter(new BasicPrinter());
 printer2.print("Hello World!");
 
 ```
+
+As an encryption algorithm is useless without a decryption algorithm, you should also implement a reader that can read the encrypted message from the file and decrypt it.
+
+
