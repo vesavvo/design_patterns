@@ -12,7 +12,7 @@ In your solution, the `BasicPrinter` class should be the base class that provide
 
 Add at least the following two decorators to your solution:
 - `FilePrinter`: This decorator should print the message to a file instead of the console. Yuo can use a hardcoded file name.
-- `EncryptedPrinter`: This decorator should encrypt the message before printing it to the console. You can use any encryption algorithm you want.
+- `EncryptedPrinter`: This decorator should encrypt the message before printing it to the console. You can use any encryption algorithm you want as soon as the message is decryptable.
 
 As a result of implementing the decorators, the code of the following structure should work:
 
@@ -25,6 +25,5 @@ printer2.print("Hello World!");
 
 ```
 
-As an encryption algorithm is useless without a decryption algorithm, you should also implement a reader that can read the encrypted message from the file and decrypt it.
 
 
