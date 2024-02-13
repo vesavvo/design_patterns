@@ -27,12 +27,12 @@ public class Model {
         return isSelected;
     }
 
-    // Metodi tilan tallentamiseksi mementoksi
+    // method to save the state of the model
     public Memento createMemento() {
         return new Memento(options, isSelected);
     }
 
-    // Metodi tilan palauttamiseksi mementosta
+    // method to restore the state of the model
     public void restoreState(Memento memento) {
         options = memento.getOptions();
         System.out.println("options: " + options[0] + " " + options[1] + " " + options[2]);
