@@ -4,7 +4,10 @@
 
 ## Example: [GUI state](../../src/main/java/memento/guistate)
 
-The simple application follow the MVC pattern:
+![scr_guistates.png](..%2Fimg%2Fscr_guistates.png)
+
+
+This simple applications follow the MVC pattern:
 - The [`Gui`](../../src/main/java/memento/guistate/Gui.java) class is the graphical user interface that contains three colored rectangles and one checkbox. By clicking on the rectangles, the user can change their color. The colors follow a sequence: red, blue, yellow, and back to red. The colored boxes are implemented in the [`ColorBox`](../../src/main/java/memento/guistate/ColorBox.java) class.
 - The [`Controller`](../../src/main/java/memento/guistate/Controller.java) class handles the communication between the model and the view. The controller reacts to the user's actions and updates the model accordingly. When necessary, the controller updates the view to reflect the changes in the model.
 - The [`Model`](../../src/main/java/memento/guistate/Model.java) class contains the application's state. It stores the colors of the rectangles and the state of the checkbox. For each colored box, the value is stored as 0, 1, or 2, and the state of the checkbox is stored as true or false.

@@ -1,5 +1,21 @@
-# Assignment: TBA
+# Assignment: Improved history functionality
 
 **Goal:**
 
+In the [Memento code example](../../src/main/java/memento/guistate), there was a graphical user interface that contained three colored rectangles and one checkbox. The user could change the colors and the status of the checkbox, and the state of the model would be updated accordingly. The application used the Memento pattern to save and restore the state of the model. The undo functionality was triggered by the user pressing the `Ctrl+Z` key combination.
+
+In this assignment, you add two features to the application:
+
+1. Redo functionality: The user can press the `Ctrl+Y` key combination to redo the last undone action.
+2. History window: The application opens a new window that displays the history of the model's state changes. The history window contains a list of the states of the model, and the user can select a state from the list to restore the model to that state.
+
+If you complete both tasks, you will get two points. If you complete only one task, you will get one point. As you submit your solution, please mark clearly which tasks you have completed in the answer box in Oma.
+
 **Guidelines:**
+
+- For the redo functionality, in addition to the undo list (i.e. the list of saved mementos), you can use a separate redo list to store the undone states recently removed from the undo list.
+    - When the user hits Ctrl-Z, the state is removed from the undo list and added to the redo list.
+    - When the user hits Ctrl-Y, the state is removed from the redo list and added to the undo list. The redo list should be cleared when the user makes a new change to the model.
+- For the history window, you can make a new Stage that contains a ListView. Inside the ListView, show relevant metadata about the states, such as the time the state was saved. When the user selects a state from the list by clicking it, the model should be restored to that state.
+   - For the memento metadata, add a metadata interface that the memento class implements.
+- Should you want to refactor the existing code, you can do so. However, the existing functionality should remain unchanged.
