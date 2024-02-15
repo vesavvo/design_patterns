@@ -17,5 +17,5 @@ If you complete both tasks, you will get two points. If you complete only one ta
     - When the user hits Ctrl-Z, the state is removed from the undo list and added to the redo list.
     - When the user hits Ctrl-Y, the state is removed from the redo list and added to the undo list. The redo list should be cleared when the user makes a new change to the model.
 - For the history window, you can make a new Stage that contains a ListView. Inside the ListView, show relevant metadata about the states, such as the time the state was saved. When the user selects a state from the list by clicking it, the model should be restored to that state.
-   - For the memento metadata, add a metadata interface that the memento class implements.
+   - Add relevant method declarations to the metadata interface that the memento class implements.
 - Should you want to refactor the existing code, you can do so. However, the existing functionality should remain unchanged.
