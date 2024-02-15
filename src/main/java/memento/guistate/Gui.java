@@ -3,6 +3,7 @@ package memento.guistate;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.CheckBox;
+import javafx.scene.control.Label;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
@@ -22,6 +23,9 @@ public class Gui extends Application {
 
         controller = new Controller(this);
 
+        // Insets for margin and padding
+        Insets insets = new Insets(10, 10, 10, 10);
+
         // Create three ColorBoxes
         colorBox1 = new ColorBox(1, controller);
         colorBox2 = new ColorBox(2, controller);
@@ -29,17 +33,22 @@ public class Gui extends Application {
 
         // Create a CheckBox
         checkBox = new CheckBox("Click me!");
+        checkBox.setPadding(insets);
 
         // Add the ColorBoxes and CheckBox to a HBox
         HBox hBox = new HBox(colorBox1.getRectangle(), colorBox2.getRectangle(), colorBox3.getRectangle());
         hBox.setSpacing(10);
-        Insets insets = new Insets(10, 10, 10, 10);
+
         hBox.setMargin(colorBox1.getRectangle(), insets);
         hBox.setMargin(colorBox2.getRectangle(), insets);
         hBox.setMargin(colorBox3.getRectangle(), insets);
 
+
+        Label label = new Label("Press Ctrl-Z to undo the last change.");
+        label.setPadding(insets);
+
         // create a VBox that contains the HBox and the CheckBox
-        VBox vBox = new VBox(hBox, checkBox);
+        VBox vBox = new VBox(hBox, checkBox, label);
         // call controller when the CheckBox is clicked
         checkBox.setOnAction(event -> {
             controller.setIsSelected(checkBox.isSelected());
