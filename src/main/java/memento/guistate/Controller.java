@@ -6,7 +6,7 @@ import java.util.List;
 public class Controller {
     private Model model;
     private Gui gui;
-    private List<Memento> history; // Memento history
+    private List<IMemento> history; // Memento history
 
     public Controller(Gui gui) {
         this.model = new Model();
@@ -35,14 +35,14 @@ public class Controller {
     public void undo() {
         if (!history.isEmpty()) {
             System.out.println("Memento found in history");
-            Memento previousState = history.remove(history.size() - 1);
+            IMemento previousState = history.remove(history.size() - 1);
             model.restoreState(previousState);
             gui.updateGui();
         }
     }
 
     private void saveToHistory() {
-        Memento currentState = model.createMemento();
+        IMemento currentState = model.createMemento();
         history.add(currentState);
     }
 }

@@ -28,13 +28,13 @@ public class Model {
     }
 
     // method to save the state of the model
-    public Memento createMemento() {
-        return new SelectionMemento(options, isSelected);
+    public IMemento createMemento() {
+        return new Memento(options, isSelected);
     }
 
     // method to restore the state of the model
-    public void restoreState(Memento memento) {
-        SelectionMemento selectionMemento = (SelectionMemento) memento;
+    public void restoreState(IMemento memento) {
+        Memento selectionMemento = (Memento) memento;
         options = selectionMemento.getOptions();
         System.out.println("options: " + options[0] + " " + options[1] + " " + options[2]);
         isSelected = selectionMemento.isSelected();
