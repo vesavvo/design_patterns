@@ -2,7 +2,7 @@
 
 **Goal:**
 
-In the [Memento code example](../../src/main/java/memento/guistate), there was a graphical user interface that contained three colored rectangles and one checkbox. The user could change the colors and the status of the checkbox, and the state of the model would be updated accordingly. The application used the Memento pattern to save and restore the state of the model. The undo functionality was triggered by the user pressing the `Ctrl+Z` key combination.
+In the [Memento code example](../examples/memento.md), there is a graphical user interface that contains three colored rectangles and one checkbox. The user can change the colors and the status of the checkbox, and the state of the model is updated accordingly. The application uses the Memento pattern to save and restore the state of the model. The undo functionality is triggered by the user pressing the `Ctrl+Z` key combination.
 
 In this assignment, you add two features to the application:
 
