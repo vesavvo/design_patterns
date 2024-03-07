@@ -8,7 +8,7 @@ A `Document` has a unique identifier as well as the creation date and the docume
 
 Each protected document is stored behind a `DocumentProxy` object. It is possible to access a protected document's content only through the proxy object, and the proxy object calls the access control service to check if the user is allowed to access the content.
 
-The list of available documents is stored in a `Library` object. it contains a `HashMap` of (document identifier, document) pairs. Allow storing both the real documents (that is, unprotected documents) as well as proxy objects (with protection) in the library. A common interface helps you here.
+The list of available documents is stored in a `Library` object. It contains a `HashMap` of (document identifier, document) pairs. Allow storing both the real documents (that is, unprotected documents) as well as proxy objects (with protection) in the library. A common interface helps you here.
 
 The proxy should have a method `getContent()` that takes the document identifier and returns the document content for an allowed user. For a protected document, the proxy uses the `AccessControlService` object to check if the user is allowed to access the document.
 
@@ -34,5 +34,5 @@ The `AccessControlService` object should be a singleton, so that all proxy objec
 
 Pay attention to how the protected documents are created and stored in the library. For each protected document, you need to construct both the real document and the proxy object. It may be a good idea to define a factory method in the `Library` class for this purpose.
 
-Once your classes are ready, add a `Main` class with a `main` method that demonstrates the use of your system with various scenarios involving various users as well as protected and unprotected documents.
+Once your classes are ready, add a `Main` class with a `main()` method that demonstrates the use of your system with various scenarios involving various users as well as protected and unprotected documents.
 
