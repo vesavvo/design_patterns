@@ -4,7 +4,9 @@
 
 ## Example: [Cities](../../src/main/java/proxy/cities)
 
-The motivation for this example is to avoid unnecessary API calls that may take time and cost money. The example is about cities and their weather information. The weather information is retrieved from the OpenWeather API. The example implements a virtual proxy that retrieves the weather information only when it is needed.
+The motivation for this example is to avoid unnecessary API calls that may take time and cost money. The example is about cities and their weather information. The weather information is retrieved from the [OpenWeather API](https://openweathermap.org/api). The proxy is a virtual proxy that retrieves the weather information only when it is needed.
+
+. The example implements a virtual proxy that retrieves the weather information only when it is needed.
 
 In this example, the client, the [`Main`](../../src/main/java/proxy/cities/Main.java) class, creates cities, after which it retrieves their names, populations, and weather information. In this example, the client uses the [`City`](../../src/main/java/proxy/cities/City.java) interface to interact with the cities. The interface has just four getter methods: `getName()`, `getCountry()`, `getPopulation()`, and `getWeather()`.
 
