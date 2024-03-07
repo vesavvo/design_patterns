@@ -15,7 +15,7 @@ Examples and Assigments for the Design Patterns course. (The lecture slides are 
 9. Strategy. [Examples](markdown/examples/strategy.md). [Assignments](markdown/assignments/strategy.md).
 10. Chain of Responsibility. [Examples](markdown/examples/chain_of_responsibility.md). [Assignments](markdown/assignments/chain_of_responsibility.md).
 11. Memento. [Examples](markdown/examples/memento.md). [Assignments](markdown/assignments/memento.md).
-12. Proxy
+12. Proxy. [Examples](markdown/examples/proxy.md). [Assignments](markdown/assignments/proxy.md).
 13. Visitor
 14. Builder
 15. Adapter
