@@ -8,7 +8,7 @@ In the application, classes representing three shapes are defined: [`Triangle`](
 
 Note that none of the classes have methods to print the area or the corner points. The Visitor pattern is used to add these methods to the classes without modifying them.
 
-The [`Shape`] interface is defined with a method `accept` that takes a [`ShapeVisitor`](../../src/main/java/visitor/shapes/ShapeVisitor.java) as an argument. Each [`ShapeVisitor`](../../src/main/java/visitor/shapes/ShapeVisitor.java) is responsible for adding a specific functionality to the shapes.
+The [`Shape`](../../src/main/java/visitor/shapes/Shape.java) interface is defined with a method `accept` that takes a [`ShapeVisitor`](../../src/main/java/visitor/shapes/ShapeVisitor.java) as an argument. Each [`ShapeVisitor`](../../src/main/java/visitor/shapes/ShapeVisitor.java) is responsible for adding a specific functionality to the shapes.
 
 The [`ShapeVisitor`](../../src/main/java/visitor/shapes/ShapeVisitor.java) interface declares various overloaded versions of the `visit()` method, each taking as an argument an object of one of the types: triangle, line, or rectangle.
 
