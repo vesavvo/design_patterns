@@ -13,11 +13,11 @@ import javafx.scene.input.KeyCode;
 public class Gui extends Application {
 
     // create a GUI with three adjacent ColorBoxes and one CheckBox below them
-    Controller controller;
-    ColorBox colorBox1;
-    ColorBox colorBox2;
-    ColorBox colorBox3;
-    CheckBox checkBox;
+    private Controller controller;
+    private ColorBox colorBox1;
+    private ColorBox colorBox2;
+    private ColorBox colorBox3;
+    private CheckBox checkBox;
 
     public void start(Stage stage) {
 
