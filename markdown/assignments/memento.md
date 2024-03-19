@@ -14,8 +14,9 @@ If you complete both tasks, you will get two points. If you complete only one ta
 **Guidelines:**
 
 - For the redo functionality, in addition to the undo list (i.e. the list of saved mementos), you can use a separate redo list to store the undone states recently removed from the undo list.
-    - When the user hits Ctrl-Z, the state is removed from the undo list and added to the redo list.
-    - When the user hits Ctrl-Y, the state is removed from the redo list and added to the undo list. The redo list should be cleared when the user makes a new change to the model.
+    - When the user hits Ctrl-Z, the current state is added to the redo list. Then, a state is removed from the undo list and restored in the application.
+    - When the user hits Ctrl-Y, the current state is added to the undo list. Then, a state is removed from the redo list and restored in the application.
+    - The redo list should be cleared when the user makes a new change to the model.
 - For the history window, you can make a new Stage that contains a ListView. Inside the ListView, show relevant metadata about the states, such as the time the state was saved. When the user selects a state from the list by clicking it, the model should be restored to that state.
    - Add relevant method declarations to the metadata interface that the memento class implements.
 - Should you want to refactor the existing code, you can do so. However, the existing functionality should remain unchanged.
