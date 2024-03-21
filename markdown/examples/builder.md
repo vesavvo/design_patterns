@@ -64,8 +64,7 @@ classDiagram
       Director --> "1" BurgerBuilder
 ```
 
-> In this example, all resulting products implement the same [`Burger`](../../src/main/java/builder/burgers/Burger.java) interface, but the Builder pattern can be used to create products of different types.
-
+> In this example, all resulting products share the same [`Burger`](../../src/main/java/builder/burgers/Burger.java) superclass, but the Builder pattern can be used to create products from completely different class hierarchies.
 
 
 ## See in the Internet
