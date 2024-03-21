@@ -1,4 +1,4 @@
-package builder.meals;
+package builder.burgers;
 
 
 import java.util.ArrayList;

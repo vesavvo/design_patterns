@@ -1,4 +1,4 @@
-package builder.meals;
+package builder.burgers;
 
 public interface BurgerBuilder {
     void addBun();
