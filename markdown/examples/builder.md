@@ -8,7 +8,7 @@ The application demonstrates the Builder pattern by creating a burger. The metho
 
 There is a [`Director`](../../src/main/java/builder/burgers/Director.java) class that is responsible for using the [`BurgerBuilder`](../../src/main/java/builder/burgers/BurgerBuilder.java) interface to build a burger. The [`Director`](../../src/main/java/builder/burgers/Director.java) class is not aware of the specific type of burger being built (veggie or cheeseburger), but it provides the methods to build a burger of any type, either in single or double format.
 
-The [`BurgerBuilder`](../../src/main/java/builder/burgers/BurgerBuilder.java) interface also has a method to build the burger, which returns a [`Burger`](../../src/main/java/builder/burgers/Burger.java) object.
+The [`BurgerBuilder`](../../src/main/java/builder/burgers/BurgerBuilder.java) interface also has a method to deliver the burger, which returns a [`Burger`](../../src/main/java/builder/burgers/Burger.java) object.
 
 In the [`Main`](../../src/main/java/builder/burgers/Main.java) class, a [`Builder`](../../src/main/java/builder/burgers/Builder.java) and [`Director`](../../src/main/java/builder/burgers/Director.java) objects are created, and the [`Director`](../../src/main/java/builder/burgers/Director.java) is asked to create a burger using the chosen [`Builder`](../../src/main/java/builder/burgers/Builder.java).
 
