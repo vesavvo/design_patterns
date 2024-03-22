@@ -2,7 +2,7 @@
 
 > A structural pattern
 
-## Example: [Pizza price calculator](../../src/main/java/adapter/pizza)
+## Example: [Pizza unit price calculator](../../src/main/java/adapter/pizza)
 
 In the calculator package, there is a [`PizzaCalculator`](../../src/main/java/adapter/pizza/calculator/PizzaCalculator.java) class that computes the unit prize of a round pizza, given its diameter and price. This class represents code that is already in use and cannot be changed.
 
