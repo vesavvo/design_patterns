@@ -1,4 +1,4 @@
-package adapter.pizza;
+package adapter.pizza.object_adapter_example;
 
 import adapter.pizza.calculator.PizzaCalculator;
 
