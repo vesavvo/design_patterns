@@ -5,8 +5,8 @@ import adapter.pizza.calculator.PizzaCalculator;
 public class SheetPizzaAdapter implements SheetPizzaCalculator {
     private PizzaCalculator calculator;
 
-    public SheetPizzaAdapter() {
-        this.calculator = new PizzaCalculator();
+    public SheetPizzaAdapter(PizzaCalculator calculator) {
+        this.calculator = calculator;
     }
 
     @Override

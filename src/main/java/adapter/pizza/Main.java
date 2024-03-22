@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
         PizzaCalculator calculator = new PizzaCalculator();
-        SheetPizzaCalculator sheetCalculator = new SheetPizzaAdapter();
+        SheetPizzaCalculator sheetCalculator = new SheetPizzaAdapter(calculator);
 
         // round pizza -- use the calculator directly
         double price1 = calculator.calculatePricePerSquareMeter(30, 12);
