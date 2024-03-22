@@ -19,8 +19,8 @@ Luckily, an adapter enables us to use the existing solution. The adapter class, 
 The adapter converts the side lengths of the sheet pizza into a diameter of a round pizza with similar area. This requires a little math.
 
 Two variants of the Adapter pattern has been applied, each in its own package:
-- [Object adapter](../../src/main/java/adapter/pizza/adapter/object_adapter_example)
-- [Class adapter](../../src/main/java/adapter/pizza/adapter/class_adapter_example)
+- [Object adapter](../../src/main/java/adapter/pizza/object_adapter_example)
+- [Class adapter](../../src/main/java/adapter/pizza/class_adapter_example)
 
 The links in the description above point to the object adapter variant.
 
