@@ -1,4 +1,4 @@
-# Builder
+# Adapter
 
 > A structural pattern
 
