@@ -18,7 +18,7 @@ Examples and Assigments for the Design Patterns course. (The lecture slides are 
 12. Proxy. [Examples](markdown/examples/proxy.md). [Assignments](markdown/assignments/proxy.md).
 13. Visitor. [Examples](markdown/examples/visitor.md). [Assignments](markdown/assignments/visitor.md).
 14. Builder. [Examples](markdown/examples/builder.md). [Assignments](markdown/assignments/builder.md).
-15. Adapter
+15. Adapter. [Examples](markdown/examples/adapter.md). [Assignments](markdown/assignments/adapter.md).
 16. Bridge
 17. Flyweight
 18. Prototype
