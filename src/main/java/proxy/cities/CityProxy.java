@@ -15,7 +15,7 @@ public class CityProxy implements City {
     private String country;
     private int population;
     private String weather;
-    private RealCity realCity; // Tässä tallennetaan viite mahdolliseen RealCity-olioon
+    private RealCity realCity;
 
     private final String API_KEY = Config.getOpenWeatherApiKey();
 

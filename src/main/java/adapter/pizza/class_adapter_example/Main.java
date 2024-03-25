@@ -13,7 +13,7 @@ public class Main {
         System.out.println(price1);
 
         // Use the adapter for a sheet (rectangular) pizza
-        double price2 = sheetCalculator.calculatePricePerSquareMeter(37, 17, 13); // 22 cm x 16 cm, 10 euros
+        double price2 = sheetCalculator.calculatePricePerSquareMeter(37, 17, 13);
         System.out.println(price2);
     }
 }
