@@ -10,7 +10,7 @@ Each protected document is stored behind a `DocumentProxy` object. It is possibl
 
 The list of available documents is stored in a `Library` object. It contains a `HashMap` of (document identifier, document) pairs. Allow storing both the real documents (that is, unprotected documents) as well as proxy objects (with protection) in the library. A common interface helps you here.
 
-The proxy should have a method `getContent()` that takes the document identifier and returns the document content for an allowed user. For a protected document, the proxy uses the `AccessControlService` object to check if the user is allowed to access the document.
+The proxy should have a method `getContent()` that returns the document content for an allowed user. For a protected document, the proxy uses the `AccessControlService` object to check if the user is allowed to access the document.
 
 The proxy also has the `getCreationDate()` method that simply returns the creation date of the document without any access control checks.
 
