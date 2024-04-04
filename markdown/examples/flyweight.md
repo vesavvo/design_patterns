@@ -32,6 +32,11 @@ The following class diagram shows the structure of the Flyweight pattern in the 
 
 ```mermaid
 classDiagram
+    class Flyweight {
+        <<interface>>
+        + getImage(): Image
+        + getDescription():String
+    }
     class TreeController {
         - trees: Tree[][]
         - treeImageFactory: TreeImageFactory
@@ -57,11 +62,13 @@ classDiagram
         - leafyTreeImage: TreeImage
         + getTreeImage(String type): TreeImage
     }
+    Flyweight <|-- TreeImage
     TreeController --> Tree : controls
     TreeController --> TreeImageFactory : uses
     TreeView --> TreeController : uses
     Tree --> TreeImage : has
     TreeImageFactory --> TreeImage : creates
+
 
 ```
 
