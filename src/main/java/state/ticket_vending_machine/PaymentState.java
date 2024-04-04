@@ -16,6 +16,6 @@ public class PaymentState extends State {
             case 2:
                 this.getMachine().setState(new ReadyState(this.getMachine()));
                 break;
-        }
+            }
     }
 }
