@@ -1,4 +1,4 @@
-# Assignment: Extending a Bridge Pattern implementation 
+# Assignment: Extending a Bridge pattern implementation 
 
 **Goal:**
 
