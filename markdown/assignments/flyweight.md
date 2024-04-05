@@ -1,6 +1,6 @@
 # Assignment: Flyweight rendering for RPG
 
-## Goal
+**Goal:**
 
 In the earlier [Factory Method assignment](factory_method.md), you designed an application that generates a random map for a role-playing game. In this assignment, you will extend the RPG map generator by adding graphical rendering of the tiles on the JavaFX canvas, while using the Flyweight design pattern to optimize memory usage.
 
@@ -8,7 +8,7 @@ Now, making a map becomes a two-phased project. First, generate the Map of Tiles
 
 If your application's design so requires, feel free to modify the existing map generation code to better align with the Flyweight pattern. The primary focus should be on the rendering process, where shared tile graphics are efficiently utilized to display the map.
 
-## Guidelines
+**Guidelines:**
 
 Proceed in the following steps:
 
