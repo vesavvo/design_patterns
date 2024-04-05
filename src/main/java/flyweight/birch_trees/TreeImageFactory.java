@@ -1,19 +1,25 @@
 package flyweight.birch_trees;
 
-import javafx.scene.image.Image;
+import java.util.EnumMap;
+import java.util.Map;
 
 public class TreeImageFactory {
 
-    // Note: only two images, so they are static
+    private static final Map<TreeType, TreeImage> images = new EnumMap<>(TreeType.class);
 
-    private static TreeImage leafyTreeImage = new TreeImage("birch_summer.png", "Leafy birch tree");
-    private static TreeImage leaflessTreeImage = new TreeImage("birch_winter.png", "Leafless birch tree");
-
-    public static TreeImage getLeafyTreeImage() {
-        return leafyTreeImage;
-    }
-
-    public static TreeImage getLeaflessTreeImage() {
-        return leaflessTreeImage;
+    public static TreeImage getTreeImage(TreeType type) {
+        TreeImage image = images.get(type);
+        if (image == null) {
+            switch (type) {
+                case SUMMER:
+                    image = new TreeImage("birch_summer.png", "Leafy birch tree");
+                    break;
+                case WINTER:
+                    image = new TreeImage("birch_winter.png", "Leafless birch tree");
+                    break;
+            }
+            images.put(type, image);
+        }
+        return image;
     }
 }

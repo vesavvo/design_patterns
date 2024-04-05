@@ -3,25 +3,25 @@ package flyweight.birch_trees;
 import javafx.scene.image.Image;
 
 class TreeController {
-    private static final int GRID_WIDTH = 5;
+    private static final int GRID_WIDTH = 8;
     private static final int GRID_HEIGHT = 5;
     private Tree[][] trees;
     private int leafyTreeCount = 0;
-    private TreeImage leaflessImage = new TreeImage("birch_winter.png", "Leafless birch tree");
-    private TreeImage leafyImage = new TreeImage("birch_summer.png", "Leafy birch tree");
 
     public TreeController() {
         trees = new Tree[GRID_HEIGHT][GRID_WIDTH];
+        // Initialize all trees to WINTER type.
         for (int i = 0; i < GRID_HEIGHT; i++) {
             for (int j = 0; j < GRID_WIDTH; j++) {
-                trees[i][j] = new Tree(TreeImageFactory.getLeaflessTreeImage());
+                trees[i][j] = new Tree(TreeImageFactory.getTreeImage(TreeType.WINTER));
             }
         }
     }
 
     public void makeTreeLeafy(int row, int col) {
         if (!trees[row][col].isLeafy()) {
-            trees[row][col].makeLeafy(TreeImageFactory.getLeafyTreeImage());
+            // Make tree SUMMER type.
+            trees[row][col].makeLeafy(TreeImageFactory.getTreeImage(TreeType.SUMMER));
             leafyTreeCount++;
         }
     }

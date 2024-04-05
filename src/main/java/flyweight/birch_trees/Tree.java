@@ -5,6 +5,7 @@ class Tree {
     private TreeImage treeImage;
 
     public Tree(TreeImage treeImage) {
+        // This constructor is important! Note that there is no creation of Image object here.
         this.treeImage = treeImage;
         this.isLeafy = false;
     }
