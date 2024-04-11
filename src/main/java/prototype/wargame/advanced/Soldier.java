@@ -19,6 +19,7 @@ public class Soldier implements Cloneable {
         try {
             Soldier clonedSoldier = (Soldier) super.clone();
             clonedSoldier.items = new ArrayList<>();
+            // deep copy
             for (Item item : this.items) {
                 clonedSoldier.addItem(item.clone());
             }

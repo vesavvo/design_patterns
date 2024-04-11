@@ -9,7 +9,7 @@ public class Soldier implements Prototype {
 
     @Override
     public Soldier clone() {
-        // Tämä on matalakopio, koska ase-olio ei kloonata syvällisesti.
+        // shallow copy
         return new Soldier(this.weapon);
     }
 
