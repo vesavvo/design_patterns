@@ -46,7 +46,11 @@ classDiagram
 
 ### Advanced Example: [Enhanced Cloning](../../src/main/java/prototype/wargame/advanced)
 
-The advanced example extends the simple one by introducing more complexity. It utilizes Java's `Object.clone()` implementation for deep cloning and does not use a separate Prototype interface for this reason. This example introduces additional classes like [`WearableItem`](../../src/main/java/prototype/wargame/advanced/WearableItem.java).
+The advanced example extends the simple one by introducing more complexity. It utilizes Java's `Object.clone()` implementation for deep cloning and does not use a separate Prototype interface for this reason.
+
+To highlight the fact that the Prototype pattern shines with complex objects, this  example demonstrates complex soldiers that are built using the [Builder](builder.md) pattern. For building the soldiers, the classes [`SoldierBuilder`](../../src/main/java/prototype/wargame/advanced/SoldierBuilder.java) and [`Director`](../../src/main/java/prototype/wargame/advanced/Director.java) are used.
+
+These classes are not part of the Prototype pattern, and they will not be further discussed in this example.
 
 #### Structure
 
