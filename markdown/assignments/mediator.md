@@ -6,7 +6,7 @@ Your goal is to create a real-time chat application that utilizes the Mediator p
 
 To keep things simple, you will use JavaFX for the GUI, and implement clients as windows on the same machine. The chat application should allow users to send messages to each other in real-time.
 
->In this assignment, we will focus on applying the Mediator design pattern. While you may be accustomed to using the MVC model for implementing graphical user interfaces. Now, be challenged to think differently. Our goal is to understand how the Mediator model can simplify the management of communication between components without resorting to MVC. This approach will help you expand your understanding of design patterns and equip you with the tools to choose the most appropriate model for each situation.
+>In this assignment, we will focus on applying the Mediator design pattern. You may be accustomed to automatically using the MVC model for implementing graphical user interfaces. Now, be challenged to think differently. Our goal is to understand how the Mediator model can simplify the management of communication between components without resorting to MVC. This approach will help you expand your understanding of design patterns and equip you with the tools to choose the most appropriate model for each situation.
 
 **Guidelines:**
 
