@@ -2,7 +2,7 @@
 
 > A behavioral design pattern
 
-## Example: [Airport Traffic Control](../../src/main/java/mediator/atc)
+## Example: [Air Traffic Control](../../src/main/java/mediator/atc)
 
 The application simulates the operations of an airport where aircraft can either take off or land. The mediator (the control tower) manages communication between aircraft and the runway, ensuring that each aircraft is assigned to a runway or asked to hold if necessary. The use of the Mediator pattern helps to decouple the aircraft and the runway, and eliminates the need of the aircraft to communicate directly with each other about their runway requests.
 
