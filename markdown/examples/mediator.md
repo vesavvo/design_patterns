@@ -14,6 +14,8 @@ The [`Runway`](../../src/main/java/mediator/atc/Runway.java) class represents a 
 
 The [`Simulator`](../../src/main/java/mediator/atc/Simulator.java) runs the simulation for a fixed number of time steps. During each time step, the control tower checks the status of the runways, and assigns runways to aircraft if they are available.
 
+The [`Main`](../../src/main/java/mediator/atc/Main.java) class acts as a starting point for the application. It creates a control tower as well as a couple of runways under its control, and asks the simulator to run the simulation.
+
 Here's how the communication flow is orchestrated by the Mediator:
 - Aircraft send a runway request to the Tower (Mediator) when they are created.
 - The Tower assigns a free runway or queues the aircraft if all runways are busy.
