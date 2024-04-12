@@ -1,4 +1,4 @@
-# Assignment: Prototype
+# Assignment: Mediator
 
 **Goal:**
 
