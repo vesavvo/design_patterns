@@ -1,4 +1,4 @@
-# Assignment: Chat app
+# Assignment: Chat App
 
 **Goal:**
 
