@@ -7,6 +7,7 @@
 The application simulates the operations of an airport where aircraft can either take off or land. The mediator (the control tower) manages communication between aircraft and the runway, ensuring that each aircraft is assigned to a runway or asked to hold if necessary. The use of the Mediator pattern helps to decouple the aircraft and the runway, and eliminates the need of the aircraft to communicate directly with each other about their runway requests.
 
 The simulation runs according to the following rules:
+- There are two runways.
 - In each time unit, the number of new planes for takeoff follows geometric distribution (p=0.2)
 - Likewise, the number of new planes for landing in a time unit follows geometric distribution (p=0.2)
 - Each plane taking off or landing occupies a runway for 5 time units
