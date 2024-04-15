@@ -17,7 +17,7 @@ public class Simulator {
             System.out.println("-----------------");
             System.out.println("TIME " + i);
             tower.tick();
-            // generate new aircraft, amount follows a Poisson distribution
+            // generate new aircraft, amount follows a geometric distribution
             while (Math.random() < PROB_NEW_TAKEOFF) {
                new Airplane(Intention.TAKEOFF, tower);
             }
