@@ -1,4 +1,4 @@
-package iterator.ring;// Ring.java
+package iterator.ring;
 import java.util.Iterator;
 
 public class Ring implements Iterable<Integer>, SimpleCollection {
