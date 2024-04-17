@@ -8,7 +8,7 @@ In this project, the Iterator design pattern is used to facilitate traversal thr
 
 The [`SimpleCollection`](../../src/main/java/iterator/ring/SimpleCollection.java) interface defines a simple collection of integers that supports adding elements and creating an iterator. The interface declares two methods: `add` to insert an element into the collection, and `iterator` to create an iterator for traversing the collection.
 
-The concrete data structure is represented by the [`Ring`](../../src/main/java/iterator/ring/Ring.java) class, which manages a circular list of integers. The `Ring` class supports operations such as adding elements to the list, and it ensures that the last element is linked back to the first, creating a circular loop. The following image shows a ring structure with four integers, 1, 2, 3, and 4:
+The concrete data structure is represented by the [`Ring`](../../src/main/java/iterator/ring/Ring.java) class, which manages a circular list of integers. The [`Ring`](../../src/main/java/iterator/ring/Ring.java) class supports operations such as adding elements to the list, and it ensures that the last element is linked back to the first, creating a circular loop. The following image shows a ring structure with four integers, 1, 2, 3, and 4:
 
 ```mermaid
 graph LR
@@ -21,7 +21,7 @@ graph LR
 
 The [`Node`](../../src/main/java/iterator/ring/Node.java) class is used within the [`Ring`](../../src/main/java/iterator/ring/Ring.java) class to hold individual elements of the list. Each [`Node`](../../src/main/java/iterator/ring/Node.java) contains an integer data and a reference to the next node, forming the link in the circular list.
 
-To traverse the `Ring`, the [`RingIterator`](../../src/main/java/iterator/ring/RingIterator.java) class is used, which implements the `Iterator<Integer>` interface as defined in the `java.util` package. This iterator provides a way to access elements in the [`Ring`](../../src/main/java/iterator/ring/Ring.java) repeatedly in a circular manner, without modifying the underlying data structure.
+To traverse the ring, the [`RingIterator`](../../src/main/java/iterator/ring/RingIterator.java) class is used, which implements the `Iterator<Integer>` interface as defined in the `java.util` package. This iterator provides a way to access elements in the ring repeatedly in a circular manner, without modifying the underlying data structure.
 
 The [`Main`](../../src/main/java/iterator/ring/Main.java) class demonstrates how to use the [`Ring`](../../src/main/java/iterator/ring/Ring.java) and its iterator. It adds several elements to the [`Ring`](../../src/main/java/iterator/ring/Ring.java) and then uses the [`RingIterator`](../../src/main/java/iterator/ring/RingIterator.java) to print elements in a loop, showcasing the circular iteration.
 
