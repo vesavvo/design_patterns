@@ -19,7 +19,7 @@ graph LR
 ```
 
 
-The [`Node`](../../src/main/java/iterator/ring/Node.java) class is used within the [`Ring`](../../src/main/java/iterator/ring/Ring.java) class to hold individual elements of the list. Each [`Node`](../../src/main/java/iterator/ring/Node.java) contains an integer data and a reference to the next node, forming the link in the circular list.
+The [`Node`](../../src/main/java/iterator/ring/Node.java) class is used within the [`Ring`](../../src/main/java/iterator/ring/Ring.java) class to hold individual elements of the list. Each [`Node`](../../src/main/java/iterator/ring/Node.java) contains an integer datum and a reference to the next node, forming the link in the circular list.
 
 To traverse the ring, the [`RingIterator`](../../src/main/java/iterator/ring/RingIterator.java) class is used, which implements the `Iterator<Integer>` interface as defined in the `java.util` package. This iterator provides a way to access elements in the ring repeatedly in a circular manner, without modifying the underlying data structure.
 
