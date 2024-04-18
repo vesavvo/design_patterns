@@ -2,6 +2,8 @@
 
 Examples and Assigments for the Design Patterns course. (The lecture slides are in Oma.)
 
+_This material has been made by Vesa Ollikainen._
+
 ## Examples and assignments
 
 1. Factory Method. [Examples](markdown/examples/factory_method.md). [Assignments](markdown/assignments/factory_method.md).
@@ -24,8 +26,10 @@ Examples and Assigments for the Design Patterns course. (The lecture slides are 
 18. Prototype. [Examples](markdown/examples/prototype.md). [Assignments](markdown/assignments/prototype.md).
 19. Mediator. [Examples](markdown/examples/mediator.md). [Assignments](markdown/assignments/mediator.md).
 20. Iterator. [Examples](markdown/examples/iterator.md). [Assignments](markdown/assignments/iterator.md).
-21. Facade
+21. Facade. [Examples](markdown/examples/facade.md). [Assignments](markdown/assignments/facade.md).
 22. Command
 
 
-_This material has been made by Vesa Ollikainen._
+
+---
+_This learning material has been produced with assistance from OpenAI's ChatGPT-4 and GitHub Copilot. These large language models have provided suggestions and solutions that have assisted the author in producing and supplementing the material. While their contribution has been significant, the final responsibility for the content and its correctness resides with the author._

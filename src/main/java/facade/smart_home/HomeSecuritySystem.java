@@ -1,4 +1,4 @@
-package facade.home_automation;
+package facade.smart_home;
 
 public class HomeSecuritySystem implements SecuritySystem {
     @Override
