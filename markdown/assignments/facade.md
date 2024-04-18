@@ -62,7 +62,7 @@ Then, design a facade that eases this task. The facade should hide the complexit
 Your facade should have one method:
 
 ```java
-String getAttributeValueFromJson(String urlString, String attributeName) throws IllegalArgumentException;
+String getAttributeValueFromJson(String urlString, String attributeName) throws IllegalArgumentException, IOException;
 ```
 
 The method should send a HTTP GET request to the given URL, retrieve the JSON response, and extract the value of the given attribute name from the JSON.
