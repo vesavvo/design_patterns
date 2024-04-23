@@ -27,9 +27,7 @@ _This material has been made by Vesa Ollikainen._
 19. Mediator. [Examples](markdown/examples/mediator.md). [Assignments](markdown/assignments/mediator.md).
 20. Iterator. [Examples](markdown/examples/iterator.md). [Assignments](markdown/assignments/iterator.md).
 21. Facade. [Examples](markdown/examples/facade.md). [Assignments](markdown/assignments/facade.md).
-22. Command
-
-
+22. Command. [Examples](markdown/examples/command.md). [Assignments](markdown/assignments/command.md).
 
 ---
 _This learning material has been produced with assistance from OpenAI's ChatGPT-4 and GitHub Copilot. These large language models have provided suggestions and solutions that have assisted the author in producing and supplementing the material. While their contribution has been significant, the final responsibility for the content and its correctness resides with the author._
