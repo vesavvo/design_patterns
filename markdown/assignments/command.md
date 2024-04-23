@@ -17,7 +17,9 @@ The editor should feature an 8x8 grid where each cell represents a pixel that ca
 - **Create Code Feature**: Implement a button that generates and displays Java code representing the current state of the 8x8 grid as an array. This code can be used directly in other Java programs.
 
 **Commands to Implement**:
-- Each movement and toggle should be implemented as a command.
+
+Each movement and toggle should be implemented as a command:
+
 - `MoveCursorUpCommand` to move the cursor up.
 - `MoveCursorDownCommand` to move the cursor down.
 - `MoveCursorLeftCommand` to move the cursor left.
