@@ -23,9 +23,9 @@ The Main class [`Main`](../../src/main/java/factory_method/adventure/Main.java) 
 
 This is a variant of the previous example.
 
-This time, the vehicle factory method is written in the concrete [`Game`](../../src/main/java/factory_method/adventure/Game.java) class whose factory method is, again, called `createRoom()`.
+This time, the vehicle factory method is written in the concrete [`Game`](../../src/main/java/factory_method/adventure_single_factory/Game.java) class whose factory method is, again, called `createRoom()`.
 
-In this example, the factory method is able to produce any kind of room. The game type is represented by an enumerated type called [`GameType`](../../src/main/java/factory_method/adventure/GameType.java). The value is given as a constructor parameter to the Game class.
+In this example, the factory method is able to produce any kind of room. The game type is represented by an enumerated type called [`GameType`](../../src/main/java/factory_method/adventure_single_factory/GameType.java). The value is given as a constructor parameter to the Game class.
 
 The game type is stored in an instance variable in the game class. The factory method `createRoom()` uses the game type to determine the concrete type of the room to be created. Alternatively, the `createRoom()` method could be parameterized with the game type.
 
