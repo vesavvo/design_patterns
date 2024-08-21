@@ -19,9 +19,9 @@ The Main class [`Main`](../../src/main/java/factory_method/adventure/Main.java) 
 
 
 
-## Example: [Adventure game with a single, concrete factory](../../src/main/java/factory_method/adventure_single_factory)
+## Example: [Adventure game with a single, concrete factory](../../src/main/java/factory_method/adventure_single_factory). Factory model, not Factory Method
 
-This is a variant of the previous example.
+This is a variant of the previous example. Technically, this implements the Factory DP, which differs from Factory Method that does not belong to GoF patterns.
 
 This time, the vehicle factory method is written in the concrete [`Game`](../../src/main/java/factory_method/adventure_single_factory/Game.java) class whose factory method is, again, called `createRoom()`.
 
