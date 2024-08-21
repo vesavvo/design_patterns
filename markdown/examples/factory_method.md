@@ -31,8 +31,6 @@ The game type is stored in an instance variable in the game class. The factory m
 
 ## See in the Internet
 
--jdk12u/blob/master/src/java.base/share/classes/java/util/Calendar.java
-
 - Refactoring Guru: https://refactoring.guru/design-patterns/factory-method
 
 - SourceMaking: https://sourcemaking.com/design_patterns/factory_method
