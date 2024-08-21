@@ -23,7 +23,7 @@ The Main class [`Main`](../../src/main/java/factory_method/adventure/Main.java) 
 
 This is a variant of the previous example. Technically, this implements the Factory DP, which differs from Factory Method that does not belong to GoF patterns.
 
-This time, the vehicle factory method is written in the concrete [`Game`](../../src/main/java/factory_method/adventure_single_factory/Game.java) class whose factory method is, again, called `createRoom()`.
+This time, the factory method is written in the concrete [`Game`](../../src/main/java/factory_method/adventure_single_factory/Game.java) class whose factory method is, again, called `createRoom()`.
 
 In this example, the factory method is able to produce any kind of room. The game type is represented by an enumerated type called [`GameType`](../../src/main/java/factory_method/adventure_single_factory/GameType.java). The value is given as a constructor parameter to the Game class.
 
@@ -31,7 +31,7 @@ The game type is stored in an instance variable in the game class. The factory m
 
 ## See in the Internet
 
-- Design pattern applied in java.util.Calendar#getInstance(): https://github.com/AdoptOpenJDK/openjdk-jdk12u/blob/master/src/java.base/share/classes/java/util/Calendar.java
+-jdk12u/blob/master/src/java.base/share/classes/java/util/Calendar.java
 
 - Refactoring Guru: https://refactoring.guru/design-patterns/factory-method
 
