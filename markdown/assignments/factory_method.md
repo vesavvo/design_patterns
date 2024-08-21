@@ -28,7 +28,7 @@ The `Tile` abstract class should have the following methods:
 
 In addition, you should have a `Game` class that has a `main()` method. The `main()` method should create a desired `Map` object and display it on the screen. The `Game` class contains the factory method `createMap()` that creates either a `CityMap` or a `WildernessMap` object.
 
-The `action()` method in the concrete tile classes is not used in this assignment. It is there to illustrate that the concrete tile classes can have additional methods that are not defined in the `Tile` interface.
+The `action()` method in the concrete tile classes is not used in this assignment. It is there to illustrate that the concrete tile classes can have additional methods that are defined in the `Tile` interface.
 
 The following class diagram illustrates the idea:
 
