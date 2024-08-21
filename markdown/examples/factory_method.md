@@ -19,7 +19,7 @@ The Main class [`Main`](../../src/main/java/factory_method/adventure/Main.java) 
 
 
 
-## Example: [Adventure game with a single, concrete factory](../../src/main/java/factory_method/adventure_single_factory). Factory model, not Factory Method
+## Example: [Adventure game with a single, concrete factory](../../src/main/java/factory_method/adventure_single_factory). Factory, not Factory Method
 
 This is a variant of the previous example. Technically, this implements the Factory DP, which differs from Factory Method that does not belong to GoF patterns.
 
