@@ -42,9 +42,9 @@ classDiagram
 
 ## See in the Internet
 
-- Refactoring Guru: https://refactoring.guru/design-patterns/template-method
+- Refactoring Guru: https://refactoring.guru/design-patterns/strategy
 
-- SourceMaking: https://sourcemaking.com/design_patterns/template_method
+- SourceMaking: https://sourcemaking.com/design_patterns/strategy
 
 
 
