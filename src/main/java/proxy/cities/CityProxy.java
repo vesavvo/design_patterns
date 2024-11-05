@@ -17,7 +17,7 @@ public class CityProxy implements City {
     private String weather;
     private RealCity realCity;
 
-    private final String API_KEY = Config.getOpenWeatherApiKey();
+    private final String API_KEY = "API_key_here";
 
     public CityProxy(String name, String country, int population) {
         this.name = name;
