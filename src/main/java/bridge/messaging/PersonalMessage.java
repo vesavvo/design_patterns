@@ -7,6 +7,6 @@ public class PersonalMessage extends Message {
 
     public void send(String message) {
         System.out.println("Sending a personal message:");
-        getMessageImp().sendMessage(message);
+        super.send(message);
     }
 }

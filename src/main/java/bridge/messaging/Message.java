@@ -11,5 +11,7 @@ public abstract class Message {
         return messageImp;
     }
 
-    abstract void send(String message);
+    public void send(String message) {
+        messageImp.sendMessage(message);
+    }
 }

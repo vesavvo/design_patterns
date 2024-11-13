@@ -7,6 +7,6 @@ public class BusinessMessage extends Message {
 
     public void send(String message) {
         System.out.println("Sending a business message:");
-        getMessageImp().sendMessage(message);
+        super.send(message);
     }
 }
