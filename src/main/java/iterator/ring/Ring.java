@@ -24,8 +24,12 @@ public class Ring implements Iterable<Integer>, SimpleCollection {
         }
     }
 
+    public Node getHead() {
+        return head;
+    }
+
     @Override
     public Iterator<Integer> iterator() {
-        return new RingIterator(head);
+        return new RingIterator(this);
     }
 }
