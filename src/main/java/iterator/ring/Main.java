@@ -8,11 +8,11 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
 
-        Ring ring = new Ring();
-        ring.add(1);
-        ring.add(2);
+        SimpleCollection ring = new Ring();
+        ring.add(17);
         ring.add(3);
-        ring.add(4);
+        ring.add(-2);
+        ring.add(0);
 
         Iterator iterator = ring.iterator();
 
