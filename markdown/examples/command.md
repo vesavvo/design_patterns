@@ -26,10 +26,8 @@ The project is divided into several packages, each containing specific component
     - [`WallPanel`](../../src/main/java/command/theater/WallPanel.java): A simple interface with two buttons to control the lighting.
 
 - **Client**:
-    - [`Main`](../../src/main/java/command/theater/Main.java): Initializes the application and sets up the relationships between commands, invokers, and receivers.
-
-- **GUI**:
-    - [`GUI`](../../src/main/java/command/theater/GUI.java): Defines the JavaFX graphical user interface for interacting with the theater systems.
+    - [`Main`](../../src/main/java/command/theater/Main.java): Initializes the application.
+    - [`GUI`](../../src/main/java/command/theater/GUI.java): Sets up the relationships between commands, invokers, and receivers. Defines the JavaFX graphical user interface for interacting with the theater systems.
     - [`StatusWindow`](../../src/main/java/command/theater/StatusWindow.java): Displays the current status of the lights and curtains, providing visual feedback through colored rectangles and labels.
 
 ### Operation
