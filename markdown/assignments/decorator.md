@@ -11,8 +11,8 @@ Then, the objective is to extend this functionality using the Decorator design p
 In your solution, the `BasicPrinter` class should be the base class that provides the basic functionality to print a message to the console. The `Printer` class should also have a `print()` method that prints the given message to the console.
 
 Add at least the following two decorators to your solution:
-- `FilePrinter`: This decorator should print the message to a file instead of the console. Yuo can use a hardcoded file name.
 - `EncryptedPrinter`: This decorator should encrypt the message before printing it to the console. You can use any encryption algorithm you want as long as the message is decryptable.
+- `XMLPrinter`: This decorator should print the message in XML format. For example, if the message is "Hello World!", the output should be `<message>Hello World!</message>`.
 
 As a result of implementing the decorators, the code of the following structure should work:
 
@@ -20,7 +20,7 @@ As a result of implementing the decorators, the code of the following structure 
 Printer printer = new BasicPrinter();
 printer.print("Hello World!");
 
-Printer printer2 = new EncryptedPrinter(new FilePrinter(new BasicPrinter());
+Printer printer2 = new EncryptedPrinter(new XMLPrinter(new BasicPrinter());
 printer2.print("Hello World!");
 
 ```
