@@ -5,7 +5,7 @@ import observer.checkboxes.view.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Observable {
+public abstract class Observable {
 
     private List<Observer> observers = new ArrayList<>();
 
