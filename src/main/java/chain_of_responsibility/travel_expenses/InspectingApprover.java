@@ -10,7 +10,7 @@ public class InspectingApprover extends Approver {
             System.out.println("InspectingApprover: Expense report approved after detailed automatic review.");
         } else {
             System.out.println("InspectingApprover: Cannot approve. Sending to next approver.");
-            this.getNextApprover().process(expenseReport);
+            super.process(expenseReport);
         }
     }
 }

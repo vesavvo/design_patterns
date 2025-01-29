@@ -1,6 +1,6 @@
 package chain_of_responsibility.travel_expenses;
 
-public class Approver {
+public abstract class Approver {
 
     private Approver nextApprover;
 
@@ -13,7 +13,4 @@ public class Approver {
         this.nextApprover = nextApprover;
     }
 
-    public Approver getNextApprover() {
-        return nextApprover;
-    }
 }

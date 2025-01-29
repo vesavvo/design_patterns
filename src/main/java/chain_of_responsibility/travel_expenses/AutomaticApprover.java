@@ -9,7 +9,7 @@ public class AutomaticApprover extends Approver {
             System.out.println("AutomaticApprover: Expense report approved automatically.");
         } else {
             System.out.println("AutomaticApprover: Cannot approve. Sending to next approver.");
-            this.getNextApprover().process(expenseReport);
+            super.process(expenseReport);
         }
     }
 }
