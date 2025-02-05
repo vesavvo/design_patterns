@@ -11,7 +11,7 @@ public class Memento implements IMemento {
     }
 
     public int[] getOptions() {
-        return options.clone(); // Return a copy of options array
+        return options;
     }
 
     public boolean isSelected() {
