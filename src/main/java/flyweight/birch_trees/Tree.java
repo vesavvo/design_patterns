@@ -1,6 +1,6 @@
 package flyweight.birch_trees;
 
-class Tree {
+public class Tree {
     private boolean isLeafy;
     private TreeImage treeImage;
 

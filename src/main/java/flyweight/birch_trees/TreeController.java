@@ -2,7 +2,7 @@ package flyweight.birch_trees;
 
 import javafx.scene.image.Image;
 
-class TreeController {
+public class TreeController {
     private static final int GRID_WIDTH = 8;
     private static final int GRID_HEIGHT = 5;
     private Tree[][] trees;
