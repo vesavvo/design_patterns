@@ -14,7 +14,7 @@ However, there is a new need: some of the pizzas are rectangular, called sheet p
 
 ![A sheet pizza](../img/sheet_pizza.png)
 
-Luckily, an adapter enables us to use the existing solution. The adapter class, [`PizzaAdapter`](../../src/main/java/adapter/pizza/object_adapter_example/PizzaAdapter.java) uses the existing [`PizzaCalculator`](../../src/main/java/adapter/pizza/calculator/PizzaCalculator.java) class to calculate the unit price of a sheet pizza. The [`SheetPizzaCalculator`](../../src/main/java/adapter/pizza/object_adapter_example/SheetPizzaCalculator.java) interface declares the method visible to the client code.
+Luckily, an adapter enables us to use the existing solution. The adapter class, [`PizzaAdapter`](../../src/main/java/adapter/pizza/object_adapter_example/PizzaAdapter.java) uses the existing [`PizzaCalculator`](../../src/main/java/adapter/pizza/calculator/PizzaCalculator.java) class to calculate the unit price of a sheet pizza. The [`PizzaCalculator`](../../src/main/java/adapter/pizza/object_adapter_example/PizzaCalculator.java) interface declares the method visible to the client code.
 
 The adapter converts the side lengths of the sheet pizza into a diameter of a round pizza with similar area. This requires a little math.
 
