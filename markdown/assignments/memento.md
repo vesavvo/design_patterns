@@ -9,7 +9,7 @@ In this assignment, you add two features to the application:
 1. Redo functionality: The user can press the `Ctrl+Y` key combination to redo the last undone action.
 2. History window: The application opens a new window that displays the history of the model's state changes. The history window contains a list of the states of the model, and the user can select a state from the list to restore the model to that state.
 
-If you complete both tasks, you will get two points. If you complete only one task, you will get one point. As you submit your solution, please mark clearly which tasks you have completed in the answer box in Oma.
+If you complete both tasks, you will get one point. If you complete only one task, you will get half a point. As you submit your solution, please mark clearly which tasks you have completed in the answer box in Oma.
 
 **Guidelines:**
 
