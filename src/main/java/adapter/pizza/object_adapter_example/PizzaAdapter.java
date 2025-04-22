@@ -1,11 +1,9 @@
 package adapter.pizza.object_adapter_example;
 
-import adapter.pizza.calculator.PizzaCalculator;
+public class PizzaAdapter implements PizzaCalculator {
+    private adapter.pizza.calculator.PizzaCalculator calculator;
 
-public class SheetPizzaAdapter implements SheetPizzaCalculator {
-    private PizzaCalculator calculator;
-
-    public SheetPizzaAdapter(PizzaCalculator calculator) {
+    public PizzaAdapter(adapter.pizza.calculator.PizzaCalculator calculator) {
         this.calculator = calculator;
     }
 
@@ -14,5 +12,10 @@ public class SheetPizzaAdapter implements SheetPizzaCalculator {
         double radiusEquivalent = Math.sqrt(firstSideLengthInCm * secondSideLengthInCm / Math.PI);
         double diameterEquivalent = 2 * radiusEquivalent;
         return calculator.calculatePricePerSquareMeter(diameterEquivalent, priceInEuros);
+    }
+
+    @Override
+    public double calculatePricePerSquareMeter(double diameterInCm, double priceInEuros) {
+        return calculator.calculatePricePerSquareMeter(diameterInCm, priceInEuros);
     }
 }
