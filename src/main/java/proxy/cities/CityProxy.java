@@ -14,10 +14,9 @@ public class CityProxy implements City {
     private String name;
     private String country;
     private int population;
-    private String weather;
     private RealCity realCity;
 
-    private final String API_KEY = "API_key_here";
+    private final String API_KEY = "bb3a8a1af2ac8a42abea4fe94de0ba0b";
 
     public CityProxy(String name, String country, int population) {
         this.name = name;
@@ -44,7 +43,7 @@ public class CityProxy implements City {
     public String getWeather() {
         if (realCity == null) {
             System.out.println("*** Proxy is fetching weather for " + name + " ***");
-            weather = fetchWeatherFromAPI(name);
+            String weather = fetchWeatherFromAPI(name);
             realCity = new RealCity(name, country, population, weather);
         }
         return realCity.getWeather();
