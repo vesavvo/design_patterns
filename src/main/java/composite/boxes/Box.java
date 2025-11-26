@@ -12,14 +12,10 @@ public class Box extends Component {
 
     @Override
     public void printData() {
-        System.out.println("Box: " + this.name);
-
-        // print the contents of all children
-        System.out.println("BEGIN: contents of " + this.name);
+        super.printData();
         for (Component child : this.children) {
             child.printData();
         }
-        System.out.println("END: contents of " + this.name);
     }
 
     @Override

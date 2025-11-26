@@ -8,7 +8,9 @@ public abstract class Component {
         this.name = name;
     }
 
-    public abstract void printData();
+    public void printData() {
+        System.out.println(this.name);
+    };
 
     public abstract void add(Component component);
 

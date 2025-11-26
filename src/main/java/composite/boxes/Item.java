@@ -6,10 +6,6 @@ public class Item extends Component {
         super(name);
     }
 
-    @Override
-    public void printData() {
-        System.out.println("Item: " + this.name);
-    }
 
     @Override
     public void add(Component component) {

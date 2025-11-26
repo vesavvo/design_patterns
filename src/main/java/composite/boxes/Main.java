@@ -29,11 +29,11 @@ public class Main {
         box1.add(box2);
         box1.add(box3);
 
-        // make boxes 4 and 5 childres of box 2
+        // make boxes 4 and 5 children of box 2
         box2.add(box4);
         box2.add(box5);
 
         // print the contents of box 1
-        item2.printData();
+        box1.printData();
     }
 }
